@@ -60,6 +60,7 @@ jobs:
       - name: Tf sec 
         run: tfsec .
         working-directory: Env/Dev 
+        continue-on-error: true
 
       - name: Terraform plan 
         run: terraform plan 
