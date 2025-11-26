@@ -1,4 +1,4 @@
-name: Terraform Infra Deployment
+name: "Infra pipeline"
 
 on:
   push:
@@ -8,12 +8,11 @@ on:
 
 jobs:
   my_job:
-    name: Terraform infra stage 
+    name: Terraform integartion 
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Test 
-        run: echo "hellow world"
+      - name: This is a checkout code 
+        uses: actions/checkout@v6
 
-    
 
