@@ -39,20 +39,28 @@ jobs:
         
       - name: Terraform init 
         run: terraform init
+        working-directory: Env/Dev
+
 
       - name: Terraform fmt 
         run: terraform fmt 
+        working-directory: Env/Dev
+
 
       - name: Terraform validate 
         run: terraform validate 
+        working-directory: Env/Dev
+
 
       - name: tfsec action
         uses: aquasecurity/tfsec-action@v1.0.3
         with:      
-          working-directory: .        
+          working-directory: Env/modeles  
         
       - name: Tf sec 
         run: tfsec .
+        working-directory: Env/Dev 
 
       - name: Terraform plan 
         run: terraform plan 
+        working-directory: Env/Dev
