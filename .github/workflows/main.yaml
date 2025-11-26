@@ -21,7 +21,7 @@ jobs:
     
     steps:
       - name: Terraform checkout code 
-        uses: actions/checkout@4
+        uses: actions/checkout@6
 
       - name: Azure Login infra 
         uses: Azure/login@v2.3.0
