@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Test 
-        uses: echo "Testting code"
+        run: echo "hellow world"
 
     
 
