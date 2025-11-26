@@ -1,0 +1,19 @@
+name: Terraform Infra Deployment
+
+on:
+  push:
+    branches:
+    - main
+    - feature/*
+
+jobs:
+  my_job:
+    name: Terraform infra stage 
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Test 
+        uses: echo "Testting code"
+
+    
+
